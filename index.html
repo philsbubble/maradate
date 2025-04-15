@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>maras date💙</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    
+    <div id="start-screen">
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/393.png" alt="Piplup" class="piplup-main">
+      <h1>plan our date 💙</h1>
+      <button onclick="startPlanning()">click me </button>
+    </div>
+
+    <!-- wetter -->
+    <div id="weather-check" class="hidden">
+      <h2>ist es kalt oder warm?☁️☀️</h2>
+      <div class="options">
+        <button onclick="setWeather('cold')">kalt ❄️</button>
+        <button onclick="setWeather('warm')">warm 🌸</button>
+      </div>
+    </div>
+
+    <!-- chill oder energie -->
+    <div id="activity-type" class="hidden">
+      <h2>anstrengendes date oder chill date?</h2>
+      <div class="options">
+        <button onclick="setActivityType('exhausting')">all in 💪</button>
+        <button onclick="setActivityType('chill')">chill vibes 🫧</button>
+      </div>
+    </div>
+
+    <!-- filtern nach wetter ppfpfpff pls work u stupid ass code -->
+    <div id="activity-options" class="hidden"></div>
+
+    <!-- essen yay -->
+    <div id="food-options" class="hidden">
+      <h2>fooood! 🍣</h2>
+      <div class="options">
+        <button onclick="selectOption('food', 'ramen 🍜')">ramen 🍜</button>
+        <button onclick="selectOption('food', 'sushi 🍣')">sushi 🍣</button>
+        <button onclick="selectOption('food', 'pad thai 🍲')">pad thai 🍲</button>
+        <button onclick="selectOption('food', 'mara entscheidet ✨')">mara sucht aus ✨</button>
+      </div>
+    </div>
+
+    <!-- dessert yay -->
+    <div id="dessert-options" class="hidden">
+      <h2>dessert am ende? 🍰</h2>
+      <div class="options">
+        <button onclick="checkDessert('ice cream 🍦')">eis 🍦</button>
+        <button onclick="selectOption('dessert', 'donuts 🍩')">donuts 🍩</button>
+        <button onclick="selectOption('dessert', 'crepes 🥞')">crepes 🥞</button>
+        <button onclick="selectOption('dessert', 'bubble Tea 🧋')">bubble tea 🧋</button>
+        <button onclick="selectOption('dessert', 'mara entscheidet ✨')">mara sucht aus ✨</button>
+      </div>
+    </div>
+
+    <!-- ergebnis -->
+    <div id="results" class="hidden">
+      <h2>unser date heute 💌</h2>
+      <p id="final-weather"></p>
+      <p id="final-activity"></p>
+      <p id="final-food"></p>
+      <p id="final-dessert"></p>
+      <button onclick="resetChoices()">ich will nochmal 🥺 🔄</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

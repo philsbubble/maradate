@@ -1,0 +1,92 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e6f7ff, #ffebf3);
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border: 3px solid #2a75bb;
+  }
+  
+  h1, h2 {
+    font-family: 'Comic Neue', cursive;
+    color: #2a75bb;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .piplup-main {
+    width: 120px;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+    margin-bottom: -5px;
+  }
+  
+  button {
+    background-color: #e678ff;
+    border: none;
+    padding: 12px 24px;
+    margin: 10px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: 'Comic Neue', cursive;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  button:hover {
+    background-color: #2a75bb;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #results {
+    animation: fadeIn 1s;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .piplup-sass-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .piplup-question {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    border: 4px solid #2a75bb;
+    max-width: 300px;
+    animation: bounceIn 0.5s;
+  }
